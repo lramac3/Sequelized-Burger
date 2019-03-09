@@ -1,0 +1,12 @@
+
+CREATE DATABASE bazzny0d60g4149x;
+USE bazzny0d60g4149x;
+
+
+CREATE TABLE burgers(
+    id INTEGER AUTO_INCREMENT NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    ate BOOLEAN DEFAULT false,
+    liked BOOLEAN DEFAULT false,
+    PRIMARY KEY(id)
+);

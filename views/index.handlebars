@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="row header">
+        <div class="col-md-12">
+            Burger Express
+        </div>
+    </div>
+    {{!-- <div class="row small-header">
+        <div class="col-md-12">
+            Favorite Burgers
+        </div>
+    </div> --}}
+    <div class="row text-center" id="add-burger">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 text-center">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="burger-name" placeholder="Add New Burger">
+                </div>
+                <button type="submit" id="submit-burger" class="btn">Add to your List</button>
+            </form>
+        </div>
+    </div> 
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-11 text-center card card-burgers" id="liked-burgers">
+                    <h1><i class="fa fa-thumbs-up"></i></h1>
+                    {{#each burgers}}
+                    {{#if ate}}
+                    {{#if liked}}
+                    {{> burgers/liked-block}}
+                    {{/if}}
+                    {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 text-center card card-burgers" id="new-burgers">
+            <h2>Wanna Try</h2>
+            {{#each burgers}}
+            {{#unless ate}}
+            {{> burgers/new-block}}
+            {{/unless}}
+            {{/each}}
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-11 text-center card card-burgers" id="disliked-burgers">
+                    <h1><i class="fa fa-thumbs-down"></i></h1>
+                    {{#each burgers}}
+                    {{#if ate}}
+                    {{#unless liked}}
+                    {{> burgers/disliked-block}}
+                    {{/unless}}
+                    {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
