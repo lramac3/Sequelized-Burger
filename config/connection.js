@@ -12,7 +12,7 @@ if (process.env.JAWSDB_URL) {
         port: 3306,
         user: "root",
         password: process.env.DB_PW,
-        database: "bazzny0d60g4149x"
+        database: "sei4ysj76n7s5wv0"
     });
 };
 
