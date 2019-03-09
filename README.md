@@ -1,10 +1,10 @@
 # Burger
 
 ## Overview
-A burger logger app built using MySQL, Node, Express, Handlebars and ORM. Following the MVC design pattern and using Node and MySQL to query and route data in the app, and Handlebars to generate HTML.
+This is a full-stack web application using MVC architecture and node.js,express,sequelize,handlebars wherein users can keep a track of their favorite burgers. They can enter the burger names they wish to eat. Once they eat, they can either like or dislike the restuarant. At any time, a user can see/edit all burgers that they haven't tried, liked or disliked by him. User can also view the wish list of all users in ascending order of their names and burger names.
    
 ## Live Site
-https://eat-da-burger-edb.herokuapp.com/
+https://sequelize-da-burger-sdb.herokuapp.com/
 
 ![burger_screenshot](https://user-images.githubusercontent.com/28829258/54067028-45d0e380-4208-11e9-9d69-9ca0cbcc152f.png)
 
