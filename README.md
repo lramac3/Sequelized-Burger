@@ -9,7 +9,7 @@ https://sequelize-da-burger-sdb.herokuapp.com/
 ![burger_screenshot](https://user-images.githubusercontent.com/28829258/54067028-45d0e380-4208-11e9-9d69-9ca0cbcc152f.png)
 
 ## Description
-- Eat-Da-Burger is a restaurant logging app that lets users input the names of burgers they'd like to eat.
+- Eat-Da-Burger is an app that lets users input the names of burgers they'd like to eat.
 - Whenever a user submits a burger's name, the app will add the burger to the Wanna Try list.
 - When the user clicks the like button, the burger will move to the left side of the page.
 - When the user clicks the dislike button, the burger will move to the right side of the page.
