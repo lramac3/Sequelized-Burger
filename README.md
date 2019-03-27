@@ -16,8 +16,6 @@ https://sequelize-da-burger-sdb.herokuapp.com/
 - If a burger is added to the like list or dislike list, user can delete the burger from the list by clicking the trash icon next to the burger.
 - Once the user deletes the burger name, user will have to add the name again to the list to see the same burger's name on the Wanna Try list.
 
-
-
 ## Directory Structure
 ```
 .
