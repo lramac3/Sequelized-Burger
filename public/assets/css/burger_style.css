@@ -1,12 +1,5 @@
 body {
-    background: url(../img/burger_theme.png) center fixed;
-    /* Full height */
-    height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-    background-size: cover;
+    background: url(../img/burger_theme.png) no-repeat center center fixed;
 }
 
 .header{
@@ -15,7 +8,7 @@ body {
     font-size:80px;
     font-weight:bolder;
     color:black;
-    font-family:'Poppins', sans-serif;;
+    font-family:cursive;
     text-shadow:0px 0px 5px white;
 }
 
@@ -25,11 +18,47 @@ body {
     font-size:30px;
     font-weight:bold;
     color:black;
-    font-family:'Poppins', sans-serif;;
+    font-family:cursive;
     text-shadow:0px 0px 5px white;
 }
 
-#add-burger{
+.styled-select {
+    height: 35px;
+    overflow: hidden;
+    width: 100px;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding-left:30px;
+    padding-right:30px;
+ }
+ .styled-select select {
+    border: none;
+    font-size: 14px;
+    height: 35px;
+    padding: 5px; /* If you add too much padding here, the options won't show in IE */
+    width: 320px;
+ }
+ .rounded {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+ }
+ .white   { 
+     background-color:#fff;
+ }
+ .white select { 
+     color:black;
+     font-size:17px;
+ }
+
+#add-user-link {
+    color: white; 
+  position: absolute;
+  top: 35%;
+}
+
+
+#add-burger,#add-user, #user-list{
     background:black;
     opacity:0.75;
     color:white;
@@ -37,22 +66,15 @@ body {
     padding-bottom:20px;
     margin-bottom:10px;
 }
-#submit-burger{
+#submit-burger, #submit-user{
     background:black;
     color:white;
     box-shadow:0px 0px 20px white;
     margin-top:10px;
     font-size:25px;
-    font-family:'Poppins', sans-serif;;
+    font-family:cursive;
 }
-#disliked-burgers{
-font-size:48px;
-color:red;
-}
-#liked-burgers{
-font-size:48px;
-color:green;
-}
+
 .burger-each{
     padding:15px;
     background:black;
@@ -83,5 +105,5 @@ color:green;
     padding-top:20px;
     padding-bottom:20px;
     box-shadow:0px 0px 10px black;
-    font-family:'Poppins', sans-serif;;
+    font-family:cursive;
 }
