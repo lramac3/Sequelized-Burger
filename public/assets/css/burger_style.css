@@ -1,5 +1,12 @@
 body {
-    background: url(../img/burger_theme.png) no-repeat center center fixed;
+   background: url(../img/burger_theme.png) center fixed;
+    /* Full height */
+    height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header{
