@@ -9,6 +9,36 @@
             Favorite Burgers
         </div>
     </div> --}}
+
+    <div class="row text-center" id="user-list">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 text-center user-select styled-select white rounded">
+            <select name="users" id="user-ddl">
+                <option value="0">Select User</option>
+                {{#each users}}
+                <option value="{{this.id}}">{{this.username}}</option>
+                {{/each}}
+            </select>
+
+        </div>
+        <div class="col-md-4 text-left">
+            <div><a href="#" id="add-user-link"><span class="align-middle">Add User</span></span></a></div>
+        </div>
+    </div>
+
+    <div class="row text-center" id="add-user">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 text-center">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="user-name" placeholder="Add New User">
+                </div>
+                <button type="submit" id="submit-user" class="btn">Add User</button>
+            </form>
+        </div>
+    </div>
+
+
     <div class="row text-center" id="add-burger">
         <div class="col-md-4"></div>
         <div class="col-md-4 text-center">
@@ -19,29 +49,22 @@
                 <button type="submit" id="submit-burger" class="btn">Add to your List</button>
             </form>
         </div>
-    </div> 
+    </div>
 
     <div class="row">
         <div class="col-md-4">
             <div class="row">
                 <div class="col-md-11 text-center card card-burgers" id="liked-burgers">
-                    <h1><i class="fa fa-thumbs-up"></i></h1>
-                    {{#each burgers}}
-                    {{#if ate}}
-                    {{#if liked}}
-                    {{> burgers/liked-block}}
-                    {{/if}}
-                    {{/if}}
-                    {{/each}}
+
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4 text-center card card-burgers" id="new-burgers">
+        <div class="col-md-4 text-center card card-burgers" id="unvisited-burgers">
             <h2>Wanna Try</h2>
             {{#each burgers}}
-            {{#unless ate}}
-            {{> burgers/new-block}}
+            {{#unless visited}}
+            {{> burgers/unvisited-block}}
             {{/unless}}
             {{/each}}
         </div>
@@ -51,14 +74,7 @@
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-11 text-center card card-burgers" id="disliked-burgers">
-                    <h1><i class="fa fa-thumbs-down"></i></h1>
-                    {{#each burgers}}
-                    {{#if ate}}
-                    {{#unless liked}}
-                    {{> burgers/disliked-block}}
-                    {{/unless}}
-                    {{/if}}
-                    {{/each}}
+
                 </div>
             </div>
         </div>
