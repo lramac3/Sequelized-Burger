@@ -68,7 +68,7 @@ module.exports = function(app) {
   app.put("/api/burgers/:id", function(req, res) {
     db.burger.update(
       {
-        visited: req.body.visited,
+        eaten: req.body.eaten,
         liked: req.body.liked,
       },
       {
