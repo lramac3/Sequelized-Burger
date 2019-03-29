@@ -9,12 +9,12 @@ $(function() {
   }
 
   function getAllburgers(data) {
-    $("#unvisited-burgers").empty();
-    $("#unvisited-burgers").append(`<h2>Wanna Try</h2>`);
+    $("#uneaten-burgers").empty();
+    $("#uneaten-burgers").append(`<h2>Wanna Try</h2>`);
     for (var i = 0; i < data.burgers.length; i++) {
-      if (!data.burgers[i].visited) {
-        $("#unvisited-burgers").append(
-          `<br><div class="burger-each unvisited">
+      if (!data.burgers[i].eaten) {
+        $("#uneaten-burgers").append(
+          `<br><div class="burger-each uneaten">
                 <button class="btn liked" data-id=` +
             data.burgers[i].id +
             `><i class="fa fa-thumbs-up"></i></button>` +
@@ -30,7 +30,7 @@ $(function() {
     $("#liked-burgers").empty();
     $("#liked-burgers").append(`<h1><i class="fa fa-thumbs-up"></i></h1>`);
     for (var i = 0; i < data.burgers.length; i++) {
-      if (data.burgers[i].visited && data.burgers[i].liked) {
+      if (data.burgers[i].eaten && data.burgers[i].liked) {
         $("#liked-burgers").append(
           `<br>
                 <div class="burger-each">` +
@@ -48,7 +48,7 @@ $(function() {
       `<h1><i class="fa fa-thumbs-down"></i></h1>`
     );
     for (var i = 0; i < data.burgers.length; i++) {
-      if (data.burgers[i].visited && !data.burgers[i].liked) {
+      if (data.burgers[i].eaten && !data.burgers[i].liked) {
         $("#disliked-burgers").append(
           `<br>
                 <div class="burger-each">` +
@@ -65,7 +65,7 @@ $(function() {
     $("#add-user").show();
     $("#liked-burgers").hide();
     $("#disliked-burgers").hide();
-    $("#unvisited-burgers").hide();
+    $("#uneaten-burgers").hide();
     $("#add-burger").hide();
     $("#user-ddl").val("0");
   });
@@ -77,7 +77,7 @@ $(function() {
         $("#liked-burgers").show();
         $("#disliked-burgers").show();
         $("#add-burger").show();
-        $("#unvisited-burgers").show();
+        $("#uneaten-burgers").show();
         $("#add-user").hide();
         getAllburgers(data);
       });
@@ -95,7 +95,7 @@ $(function() {
 
     //create object with new values
     var newburgerState = {
-      visited: true,
+      eaten: true,
       liked: true,
     };
 
@@ -119,7 +119,7 @@ $(function() {
 
     //create object with new values
     var newburgerState = {
-      visited: true,
+      eaten: true,
       liked: false,
     };
 
