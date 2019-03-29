@@ -4,7 +4,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    visited: {
+    ate: {
       type: DataTypes.BOOLEAN,
       defaultValue: false,
     },
@@ -23,3 +23,4 @@ module.exports = function(sequelize, DataTypes) {
   };
   return burger;
 };
+ 
