@@ -60,11 +60,11 @@
             </div>
         </div>
 
-        <div class="col-md-4 text-center card card-burgers" id="uneaten-burgers">
+        <div class="col-md-4 text-center card card-burgers" id="unvisited-burgers">
             <h2>Wanna Try</h2>
             {{#each burgers}}
-            {{#unless eaten}}
-            {{> burgers/uneaten-block}}
+            {{#unless visited}}
+            {{> burgers/unvisited-block}}
             {{/unless}}
             {{/each}}
         </div>
