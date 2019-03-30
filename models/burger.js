@@ -5,7 +5,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
     },
 
-    visited: {
+    eaten: {
 
       type: DataTypes.BOOLEAN,
       defaultValue: false,
