@@ -2,7 +2,7 @@
 
 ## Overview
 This is a full-stack web application using MVC architecture and node.js,express,sequelize,handlebars wherein users can keep a track of their favorite burgers. They can enter the burger names they wish to eat. Once they eat, they can either like or dislike the restuarant. At any time, a user can see/edit all burgers that they haven't tried, liked or disliked by him. User can also view the wish list of all users in ascending order of their names and burger names.
-   
+    
 ## Live Site
 https://sequelize-da-burger-sdb.herokuapp.com/
 
