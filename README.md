@@ -66,4 +66,4 @@ https://sequelize-da-burger-sdb.herokuapp.com/
 - Express.js
 - Express Handlebars
 - MySQL
-- ORM 
+- Sequelize ORM 
