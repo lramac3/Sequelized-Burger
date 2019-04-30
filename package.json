@@ -1,5 +1,5 @@
 {
-  "name": "burger",
+  "name": "sequelized-burger",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,20 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lramac3/burger.git"
+    "url": "git+https://github.com/lramac3/Sequelized-Burger.git"
   },
   "keywords": [],
   "author": "Linu Ramachandran",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lramac3/burger/issues"
+    "url": "https://github.com/lramac3/Sequelized-Burger/issues"
   },
-  "homepage": "https://github.com/lramac3/burger#readme",
+  "homepage": "https://github.com/lramac3/Sequelized-Burger#readme",
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.19.0",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "mysql2": "^1.6.5",
-    "sequelize": "^4.43.0"
+    "sequelize": "^5.8.1"
   }
 }
